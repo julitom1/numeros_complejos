@@ -99,33 +99,28 @@ def producto_tensor(m1,m2):
 
 def cofactores(matriz1,i,j):
     negativos=0
-    while len(matriz1)>2:
-        n=len(matriz1)
-        matriz2=[]
+    n=len(matriz1)
+    matriz2=[]
+    if len(matriz1)>2:
         for x in range(n):
             m=[]
             if x!=i:
                 for y in range(n):
                     if y!=j:
+
                         m.append(matriz1[x][y])
-                        print(m)
                 matriz2.append(m)
         matriz1=matriz2
-        if (i+j)%2!=0:
-            negativos+=1
-    print(matriz1)
-    m=imaginar.multiplicacion(matriz1[0][0],matriz1[1][1])
-    n=imaginar.multiplicacion(matriz1[0][1],matriz1[1][0])
-    rta=imaginar.resta(m,n)
-    if negativos%2!=0:
-        rta=imaginar.multiplicacion((-1,0),rta)
-    return rta
+    return matriz1
                 
     
 def determinante(matriz1):
-    rta=cofactores(matriz1,0,0)
-    rta=imaginar.multiplicacion(matriz1[0][0],rta)
-    return rta
+    while len(matriz1)>2:
+        matriz1=multiplicacion_escalar(matriz1[0][0],cofactores(matriz1,1,1))
+        print(matriz1)
+    print(matriz1)
+    r1=imaginar.multiplicacion(matriz1[0][0],matriz1[1][1])
+    return imaginar.resta(r1,imaginar.multiplicacion(matriz1[1][0],matriz1[0][1]))
     
 def raiz_matriz(valor,y):
     mod=cartesiano_polar(valor)
@@ -143,11 +138,3 @@ def multiplicacion_matriz(matriz1,matriz2):
                 lis.append(imaginar.sumar(sumar,k))
         lista.append(lis)
     return lista
-        
-
-
-
-
-                
-            
-
