@@ -46,7 +46,7 @@ def modulo(self):
         return r
 
 def conjugado(self ):
-        return (self.tupla[0] , - self.tupla[1])
+        return (self[0] , - self[1])
             
 
 
