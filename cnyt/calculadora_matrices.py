@@ -86,10 +86,13 @@ def adjunta(matriz1):
 
 #def matriz_accion():
 
-#def norma(matriz):
-  #  matriz2=
-    #matriz2=multiplicacion(matriz)
-    #return determinante(matriz2)
+def norma(matriz):
+    matriz2=transpuesta(matriz)
+    matriz2=multiplicacion_matriz(matriz2,matriz)
+    suma=0
+    for x in range(len(matriz2)):
+        suma+=matriz[x][x][0]
+    return suma**(1/2)
 
 #def distancia_matrices():
     
