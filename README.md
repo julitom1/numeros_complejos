@@ -50,9 +50,16 @@ Para invocar la calculadora de matrices es cuestion de llamarla como calculadora
   
   **Inversa de matrices complejos:  inversa(matriz1)** 
   
-  Recibe una matriz y devuelve una matriz que contiene la inversa es decir(A^-1)
-  **Multiplicación escalar de matrices complejas:       multiplicacion_escalar_matrices(tupla1,matriz1)**
+  Recibe una matriz y devuelve una matriz que contiene la inversa de la matriz.
+  
+  **Multiplicación escalar de matrices complejas: multiplicacion_escalar_matrices(tupla1,matriz1)**
+  
+  Recibe una tupla y una matriz y retorna una matriz que contiene la multiplicacion de la tupla con cada componente.
+  
   **Matriz transpuesta:           transpuesta(matriz1) **
+  
+  Recibe una matriz y retorna la matriz que contiene la transpuesta de la matriz enviada
+  
   **Matriz conjugada:           conjugada(matriz1)**          
   **Matriz adjunta:                 adjunta(matriz1)**               
   **Función para calcular la "acción" de una matriz sobre un vector: en proceso**
