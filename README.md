@@ -2,7 +2,7 @@
 
 Es una libreria para python capaz de calcular las operaciones basicas de los numeros complejos, operaciones con vectores y además operaciones con matrices.
 
-**Operaciones basicas:**
+# Operaciones basicas:
 
 Esta libreria se importa con el nombre de imaginar.
 El uso de esta libreria es mediante tuplas donde el primer numero representa la parte real y la segunda la parte imaginaria.
@@ -18,7 +18,7 @@ A continuacion se encuentra las operaciones que maneja:
   * El modulo:                                   (modulo(tupla1))
   * El conjugado:                                (conjugado(tupla1))
   
-**Calculadora de matrices con numeros imaginarios**
+# Calculadora de matrices con numeros imaginarios
 
 Esta libreria se importa con el nombre de calculadora_matrices que se apoya a traves de la libreria de imaginar.
 El uso de esta libreria es mediante listas y adentro se colocan las tuplas donde el primer numero representa la parte real y la segunda la parte imaginaria.
@@ -56,16 +56,41 @@ Para invocar la calculadora de matrices es cuestion de llamarla como calculadora
   
   Recibe una tupla y una matriz y retorna una matriz que contiene la multiplicacion de la tupla con cada componente.
   
-  **Matriz transpuesta:           transpuesta(matriz1) **
+  **Matriz transpuesta: transpuesta(matriz1)**
   
   Recibe una matriz y retorna la matriz que contiene la transpuesta de la matriz enviada
   
-  **Matriz conjugada:           conjugada(matriz1)**          
-  **Matriz adjunta:                 adjunta(matriz1)**               
-  **Función para calcular la "acción" de una matriz sobre un vector: en proceso**
-  **Norma de matrices: en proceso**
-  **Distancia entrematrices: en proceso**
+  **Matriz conjugada:           conjugada(matriz1)** 
+  
+  Recibe una matriz y retorna una matriz que contiene el signo contrario en la parte imaginaria
+  
+  **Matriz adjunta:                 adjunta(matriz1)**   
+  
+  Recibe una matriz y retorna una matrizque contiene la adjunta de la matriz enviada
+  
+  **Norma de matrices: norma(matriz)**
+  
+  Recibe una matriz y retorna un float que representa la norma de la matriz.
+  
+  **Distancia entrematrices: distancia_matrices(matriz1,matriz2)**
+  
+  Recibe 2 matrices del mismo tamaño y retorna un numero flotante que representa la distancia entre las dos matrices.
+  
   **Revisar si es unitaria: matriz_unitaria(matriz1)**
+  
+  Recibe una matriz y retorna y retorna un booleano diciendo si es una matriz unitaria o no.
+  
   **Revisar si es Hermitian:matriz_hermitiana(matriz)**
+  
+  Recibe una matriz y retorna y retorna un booleano diciendo si es una matriz hermitiana o no.
+  
   **Producto tensor: producto_tensor(matriz1,matriz2)**
+  
+  Recibe 2 matrices y retorna una matriz con el producto tensor de las dos matrices enviadas.
+  
+  
+  # Autores
+  
+  *Yarit Yajanny Villalobos Jimenez
+  
   
