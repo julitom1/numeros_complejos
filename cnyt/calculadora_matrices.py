@@ -5,12 +5,10 @@ def producto_escalar(c,v1):
         v1[x]=imaginar.multiplicacion(c,v1[x])
     return v1
 
-def adicion_vectores(matriz1,matriz2):
-    
-    matriz3,matriz4=[],[]
-    matriz3.append(matriz1)
-    matriz4.append(matriz2)
-    return adicion_matrices(matriz3,matriz4)
+def adicion_vectores(lista1,lista2):
+    for x in range(len(lista1)):
+        lista1[x]=imaginar.suma(lista1[x],lista2[x])
+    return lista1
 
 def inversa_vectores(matriz1):
     
@@ -32,7 +30,6 @@ def adicion_matrices(matriz1,matriz2):
     except:
         return "La suma no tiene las mismas dimensiones"
 def inversa(matriz1):
-    #try:
         n=len(matriz1[0])
         matriz2=transpuesta(adjunta(matriz1))
         det=determinante(matriz1)
@@ -43,7 +40,6 @@ def inversa(matriz1):
                 lista.append(imaginar.division(matriz2[x][y],det))
             lis.append(lista)
         return lis
-    #except:print("no tiene las mismas dimensiones")
 def multiplicacion_escalar_matrices(escalar,matriz):
     matriz2=[]
     n=len(matriz)
@@ -94,7 +90,22 @@ def norma(matriz):
         suma+=matriz[x][x][0]
     return suma**(1/2)
 
-#def distancia_matrices():
+def distancia_matrices(matriz1,matriz2):
+    suma=(0,0)
+    for x in range(len(matriz1)):
+        for y in range(len(matriz1[0])):
+            s=imaginar.resta(matriz1[x][y],matriz2[x][y])
+
+            s=imaginar.multiplicacion(s,s)
+            suma=imaginar.suma(suma,s)
+    
+    return (suma[0]+suma[1])**(1/2)
+
+def trace(matriz1):
+    suma=(0,0)
+    for x in range(len(matriz1)):
+          suma=imaginar.suma(suma,matriz1[x][x])
+    return suma
     
 def matriz_unitaria(matriz1):
         matriz3=transpuesta(matriz1)
