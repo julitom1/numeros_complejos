@@ -114,7 +114,7 @@ Para invocar la calculadora de matrices es cuestion de llamarla como calculadora
   
   Recibe 2 matrices y retorna una matriz con el producto tensor de las dos matrices enviadas.
   
-  
+ 
   # Autores
   
   *Yarit Yajanny Villalobos Jimenez
