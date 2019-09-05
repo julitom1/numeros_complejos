@@ -32,7 +32,7 @@ Para invocar la calculadora de matrices es cuestion de llamarla como calculadora
 
 **Operaciones con vectores y matrices:**
 
-  **Adición de vectores complejos:**adicion_vectores(lista1,lista2)**
+  **Adición de vectores complejos: adicion_vectores(lista1,lista2)**
   
   Calcula la adicion entre 2 vectores complejos, se le pasa dos listas de la misma longitud y devolvera una lista con la suma de los dos vectores, la lista esta conformada de tuplas.
       
