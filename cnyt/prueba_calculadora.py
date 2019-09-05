@@ -6,7 +6,7 @@ import imaginar
 class unit_imaginar(unittest.TestCase):
         
         def test_adicion_vectores(self):
-                self.assertEqual(calculadora_matrices.adicion_vectores([(3,1),(2,1),(4,2)],[(3,2),(4,3),(5,2)]),[[(6, 3), (6, 4), (9, 4)]] )
+                self.assertEqual(calculadora_matrices.adicion_vectores([(3,1),(2,1),(4,2)],[(3,2),(4,3),(5,2)]),[(6, 3), (6, 4), (9, 4)] )
 
         def test_inversa(self):
                  self.assertEqual(calculadora_matrices.inversa_vectores([(1,-1),(0,0),(1,1)]),[(-1, 1), (0, 0), (-1, -1)])
@@ -35,10 +35,10 @@ class unit_imaginar(unittest.TestCase):
         #def test_accion(self):
 
 
-        #def test_norma_matricial:
-
-           #def test_distancia_entrematrices 
-
+        def test_norma_matricial(self):
+            self.assertEqual(calculadora_matrices.norma([[(2,1),(3,0),(-1,4)],[(4,-1),(5,0),(17,-2)],[(1,0),(3,-1),(1,3)]]),2.8284271247461903)
+        def test_distancia_entrematrices(self):
+            self.assertEqual(calculadora_matrices.distancia_matrices([[(1,0),(0,0),(0,0)],[(0,0),(0,1),(0,2)],[(1,-1),(0,0),(1,1)]],[[(1,1),(0,0),(0,7)],[(0,0),(5,1),(0,2)],[(8,-1),(-3,0),(1,1)]]),5.744562646538029)
         def test_unitaria(self):
             self.assertEqual(calculadora_matrices.matriz_unitaria([[(1,0),(-1,1)],[(1,1),(1,0)]]),True)
 
@@ -48,7 +48,3 @@ class unit_imaginar(unittest.TestCase):
         def test_producto_tensor(self):
                 self.assertEqual(calculadora_matrices.producto_tensor([[(2,1),(3,0),(-1,4)],[(4,-1),(5,0),(17,-2)],[(1,0),(3,-1),(1,3)]],[[(4,2),(2,0),(-3,-2)],[(1,0),(0,5),(-2,0)],[(1,0),(-2,0),(4,0)]]),[[(6, 8), (4, 2), (-4, -7), (2, 1), (-5, 10), (-4, -2), (2, 1), (-4, -2), (8, 4)], [(12, 6), (6, 0), (-9, -6), (3, 0), (0, 15), (-6, 0), (3, 0), (-6, 0), (12, 0)], [(-12, 14), (-2, 8), (11, -10), (-1, 4), (-20, -5), (2, -8), (-1, 4), (2, -8), (-4, 16)], [(18, 4), (8, -2), (-14, -5), (4, -1), (5, 20), (-8, 2), (4, -1), (-8, 2), (16, -4)], [(20, 10), (10, 0), (-15, -10), (5, 0), (0, 25), (-10, 0), (5, 0), (-10, 0), (20, 0)], [(72, 26), (34, -4), (-55, -28), (17, -2), (10, 85), (-34, 4), (17, -2), (-34, 4), (68, -8)], [(4, 2), (2, 0), (-3, -2), (1, 0), (0, 5), (-2, 0), (1, 0), (-2, 0), (4, 0)], [(14, 2), (6, -2), (-11, -3), (3, -1), (5, 15), (-6, 2), (3, -1), (-6, 2), (12, -4)], [(-2, 14), (2, 6), (3, -11), (1, 3), (-15, 5), (-2, -6), (1, 3), (-2, -6), (4, 12)]])
 unittest.main()
-
-        
-        
-

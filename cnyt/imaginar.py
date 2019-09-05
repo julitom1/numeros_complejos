@@ -1,4 +1,3 @@
-
 import math
 
 
@@ -47,9 +46,3 @@ def modulo(self):
 
 def conjugado(self ):
         return (self[0] , - self[1])
-            
-
-
-
-            
-
