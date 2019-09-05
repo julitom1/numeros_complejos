@@ -4,19 +4,45 @@ Es una libreria para python capaz de calcular las operaciones basicas de los num
 
 # Operaciones basicas:
 
-Esta libreria se importa con el nombre de imaginar.
+Esta libreria se importa con el nombre de imaginar. (**import imaginar**)
 El uso de esta libreria es mediante tuplas donde el primer numero representa la parte real y la segunda la parte imaginaria.
-A continuacion se encuentra las operaciones que maneja:
+A continuacion se encuentra las operaciones que maneja, si se desea manejar alguna operacion es cuestion de llamarla es decir imaginar.funcion(el nombre de la funcion que desea usar) a continuacion se muestra el nombre de las funciones:
 
-  * Suma entre numeros complejos:                (sumar(tupla1,tupla2))
-  * Resta entre numeros complejos:               (resta(tupla1,tupla2))
-  * Multiplicacion entre numeros complejos:      (multiplicacion(tupla1,tupla2))
-  * Division entre numeros complejos:            (division(tupla1,tupla2))
-  * La fase de un numero complejo:               (fase(tupla1))
-  * Conversion de cartesiano a polar:            (cartesiano_polar(tupla1))
-  * Conversion de polar a cartesiano:            (polar_cartesiano(tupla1))
-  * El modulo:                                   (modulo(tupla1))
-  * El conjugado:                                (conjugado(tupla1))
+  **Suma entre numeros complejos:                sumar(tupla1,tupla2)**
+  
+  Recibe dos tuplas retorna una tupla con la suma de las dos tuplas enviadas.
+  
+  **Resta entre numeros complejos:               resta(tupla1,tupla2)**
+  
+  Recibe dos tuplas retorna una tupla con la resta de las dos tuplas enviadas.
+  
+  **Multiplicacion entre numeros complejos:      multiplicacion(tupla1,tupla2)**
+  
+  Recibe dos tuplas retorna una tupla con la multiplicacion de las dos tuplas enviadas.
+  
+  **Division entre numeros complejos:            division(tupla1,tupla2)**
+  
+  Recibe dos tuplas retorna una tupla con la division de las dos tuplas enviadas.
+  
+  **La fase de un numero complejo:               fase(tupla1)**
+  
+  Recibe una tupla que retorna un flotante que representa la fase.
+  
+  **Conversion de cartesiano a polar:            cartesiano_polar(tupla1)**
+  
+  Recibe una tupla que retorna una tupla donde el primer numero representa el ,odulo y el segundo la fase.
+  
+  **Conversion de polar a cartesiano:            polar_cartesiano(tupla1)**
+  
+ Recibe una tupla que retorna una tupla donde el primer numero representa el real y el segundo el imaginario.
+  
+  **El modulo:                                   modulo(tupla1)**
+  
+  Recibe una tupla que retorna un numero flotante que es el modulo de la tupla enviada
+  
+  **El conjugado:                                conjugado(tupla1)**
+  
+  Recibe una tupla que retorna una tupla con el conjugado de la tupla enviada
   
 # Calculadora de matrices con numeros imaginarios
 
