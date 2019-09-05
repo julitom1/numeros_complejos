@@ -32,11 +32,12 @@ Para invocar la calculadora de matrices es cuestion de llamarla como calculadora
 
 **Operaciones con vectores y matrices:**
 
-  **Adición de vectores complejos:**
-  **adicion_vectores(lista1,lista2)**
+  **Adición de vectores complejos:**adicion_vectores(lista1,lista2)**
+  
   Calcula la adicion entre 2 vectores complejos, se le pasa dos listas de la misma longitud y devolvera una lista con la suma de los dos vectores, la lista esta conformada de tuplas.
       
   **Inversa de vectores complejos:   inversa_vectores(lista1)**
+  
   Recibe una lista y retorna una lista que contiene la inversa de la lista enviada.
   
   **Multiplicación escalar de vectores complejos:producto_escalar(tupla1,lista1)**
@@ -46,7 +47,10 @@ Para invocar la calculadora de matrices es cuestion de llamarla como calculadora
   **Adición de matrices complejos: adicion_matrices(matriz1,matriz2):**
   
   Recibe dos matrices y retorna una matriz que contiene la suma de elemento por elemento de las dos matrices enviadas.
-  **Inversa de matrices complejos:  inversa(matriz1)**  
+  
+  **Inversa de matrices complejos:  inversa(matriz1)** 
+  
+  Recibe una matriz y devuelve una matriz que contiene la inversa es decir(A^-1)
   **Multiplicación escalar de matrices complejas:       multiplicacion_escalar_matrices(tupla1,matriz1)**
   **Matriz transpuesta:           transpuesta(matriz1) **
   **Matriz conjugada:           conjugada(matriz1)**          
