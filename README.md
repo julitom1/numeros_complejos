@@ -24,8 +24,17 @@ Esta libreria se importa con el nombre de calculadora_matrices que se apoya a tr
 El uso de esta libreria es mediante listas y adentro se colocan las tuplas donde el primer numero representa la parte real y la segunda la parte imaginaria.
 A continuacion se encuentra las operaciones que maneja:
 
-  * Adición de vectores complejos:   adicion_vectores(lista1,lista2)
-  * Inversa de vectores complejos:   inversa_vectores(lista1)       
+Para utilizar la calculadora de matrices imaginarios, se importa con: **import calculadora_matrices** y tiene que tener descargada la libreria de imaginar no es necesario llamarla, puesto que esta ya la llama.
+
+Esta calculadora de matrices al igual que la calculadora normal de imaginarios funciona mediante tuplas de longitud 2, donde el primer numero representa la parte real y el segundo la parte imaginaria, si se van a llamar funciones con listas o matrices, se llena con tuplas. Si es un numero real, sin imaginario se llena el espacio imaginario con un cero, igualmente en diseversa.
+
+Para invocar la calculadora de matrices es cuestion de llamarla como calculadora_matrices.funcion(el nombre de la funcion que de sea usar) a continuacion se muestra el nombre de las funciones
+
+  **Adición de vectores complejos:   adicion_vectores(lista1,lista2)**
+  Calcula la adicion entre 2 vectores complejos, se le pasa dos listas de la misma longitud y devolvera la suma de los 2 vectores.
+      
+  **Inversa de vectores complejos:   inversa_vectores(lista1)**
+  
   * Multiplicación escalar de vectores complejos:   producto_escalar(tupla1,lista1)
   * Adición de matrices complejos: adicion_matrices(matriz1,matriz2): 
   * Inversa de matrices complejos:  inversa(matriz1)  
